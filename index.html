@@ -26,7 +26,7 @@
             <li><a class="link" href="#contact-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -71,7 +71,7 @@
     </section>
     <section class="section" id="chefs-section">
       <div class="container">
-        <h2 class="chefs-title section-title centered">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
+        <h2 class="chefs-title section-title centered">Наші найкращі <br /><span class="accent">шеф-кухарі</span></h2>
         <ul class="chefs-list">
           <li class="chefs-item">
             <article class="chef-card">
@@ -93,7 +93,7 @@
                 <h3 class="chef-title">Влад</h3>
                 <p class="chef-text">Привіт, я Влад!</p>
                 <p class="chef-text">
-                  Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
+                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов,
                   з якою ми ділимось кожен раз з Вами через нашу випічку!
                 </p>
                 <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
@@ -107,7 +107,7 @@
       <div class="container">
         <h2 class="formats-title section-title centered">Формати</h2>
         <div class="formats-container">
-          <button class="carousel-button" type="button">
+          <button class="carousel-button prev" type="button">
             <svg width="16" height="16">
               <use href='./images/icons.svg#icon-Arrow'>
               </use>
@@ -170,7 +170,7 @@
               </article>
             </li> -->
           </ul>
-          <button class="carousel-button" type="button">
+          <button class="carousel-button next" type="button">
             <svg width="16" height="16">
               <use href='./images/icons.svg#icon-Arrow'>
               </use>
@@ -249,6 +249,15 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">
+        Close
+      </button>
+    </div>
+  </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
